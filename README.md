@@ -1,7 +1,7 @@
 # mcp-loadtest Action demo
 
 Checks the [mcp-loadtest](https://github.com/clytie0x/mcp-loadtest) GitHub
-Action end to end, pinned to `v0.4.1`.
+Action end to end, pinned to `v0.5.0`.
 
 `server.py` is a small MCP server with no dependencies. The
 [workflow](.github/workflows/demo.yml) probes it twice:
@@ -16,7 +16,7 @@ tool the server marks read-only that takes no required arguments, here
 `get_status`.
 
 Run the same probe locally with a
-[release binary](https://github.com/clytie0x/mcp-loadtest/releases/tag/v0.4.1):
+[release binary](https://github.com/clytie0x/mcp-loadtest/releases/tag/v0.5.0):
 
 ```bash
 mcp-loadtest deadlock-probe --server "python3 server.py"

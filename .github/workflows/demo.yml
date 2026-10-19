@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - id: probe
-        uses: clytie0x/mcp-loadtest@v0.4.1
+        uses: clytie0x/mcp-loadtest@v0.5.0
         with:
           server: python3 server.py
       - name: Report says passed
@@ -29,7 +29,7 @@ jobs:
       # Expected to fail; the next step turns that failure into this job's pass.
       - id: probe
         continue-on-error: true
-        uses: clytie0x/mcp-loadtest@v0.4.1
+        uses: clytie0x/mcp-loadtest@v0.5.0
         with:
           server: python3 server.py --deadlock
       - name: The probe caught the deadlock
